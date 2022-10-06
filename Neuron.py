@@ -16,11 +16,8 @@ class Neuron: # implementation of a Neuron
 
 
 if __name__ == '__main__':
-    weight = 3
-    neuron01 = Neuron(weight)
-
-    training_samples = [zip(inputs,targets)]
-    
+    weight = 2.1
+    neuron = Neuron(weight)    
 
     for sample in zip(inputs,targets):
-        print(neuron01.error(sample[0],sample[1]))
+        print(neuron.error(sample[0],sample[1]))
